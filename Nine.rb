@@ -1,11 +1,10 @@
-
-  def alpha
-    alphabets= "a".."z"
-    alphabets.each do |alphabets|
-    puts "#{alphabets}"
-      if alphabets == "g"
-        break
-  end
-  end
-  end
-  alpha
+class Person
+ def show(name)
+   @name= name
+ end
+end
+obj1 = Person.new
+obj2 = Person.new
+obj1.show("abc")
+xyz="21"
+obj2.show(xyz)

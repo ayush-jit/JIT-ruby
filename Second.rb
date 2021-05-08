@@ -1,3 +1,4 @@
+#table printing
 class Second
   puts "Enter the number:"
   num=gets.chomp.to_i

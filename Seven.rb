@@ -1,22 +1,18 @@
-#case statement
 class Seven
-  def marks
-    puts "Enter your marks:"
-    i=gets.chomp.to_i
-    
-    case i
-    when 0...34
-      puts "Failed"
-      
-    when 34...65
-      puts "B grade"  
-      
-    when 65...100
-      puts "A grade"  
-      
-    else "error"  
-    end
+  def cars
+   puts "this is a public method"
+    obj1=Seven.new
+     obj1.bike()
+     cycle
+  end
+  protected
+  def bike
+   puts "this is a protected method"
+  end
+  private 
+  def cycle
+    puts "this is private method"
   end
 end
 obj= Seven.new
-obj.marks()
+obj.cars()
